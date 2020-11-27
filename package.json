@@ -1,0 +1,20 @@
+{
+  "name": "html-notes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "^2.2.0",
+    "pretty-quick": "^3.1.0",
+    "vuepress": "^1.7.1"
+  },
+  "scripts": {
+    "start": "vuepress dev docs",
+    "debug": "node --inspect node_modules/vuepress/cli.js dev docs",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "dependencies": {
+    "page-playground": "^0.1.7"
+  }
+}
