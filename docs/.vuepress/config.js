@@ -1,17 +1,22 @@
 const unescapeAll = require("markdown-it/lib/common/utils").unescapeAll;
 
 module.exports = {
-    head:[
-        ['script',{src:'/vue.min.js'}],
-        ['script',{src:'/html.min.js'}],
-    ],
+  title: "HTML 笔记",
+  base: "/",
+  head: [
+    ["script", { src: "/vue.min.js" }],
+    ["script", { src: "/html.min.js" }],
+  ],
+  themeConfig: {
+    sidebar: ["", "kinds", "meta", "text"],
+  },
   markdown: {
     plugins: [
       (md) => {
         console.log({ md });
         const defaultFenceRule = md.renderer.rules.fence;
-        const fence = function (tokens, idx, options, env, slf,...args) {
-            // console.log({tokens,idx,options,env,slf,args})
+        const fence = function (tokens, idx, options, env, slf, ...args) {
+          // console.log({tokens,idx,options,env,slf,args})
           const token = tokens[idx],
             info = token.info ? unescapeAll(token.info).trim() : "";
           if (info === "html") {
