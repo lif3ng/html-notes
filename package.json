@@ -16,5 +16,10 @@
   },
   "dependencies": {
     "page-playground": "^0.1.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
