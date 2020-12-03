@@ -20,6 +20,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14
-    - run: sed 's#base: "/"#base: "/html-notes/"#g' docs/.vuepress/config.js
     - run: yarn
-    - run: yarn build
+    - run: ghpages=1 yarn build
+    - run: |
+        cd docs/.vuepress/dist
+        git init
+        git add -A
+        git commit -m 'deploy'
+        git push -f https://lif3ng:${{ secrets.GITHUB_TOKEN }}@github.com/lif3ng/html-notes.git master:gh-pages
+
+        
