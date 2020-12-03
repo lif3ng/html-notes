@@ -23,6 +23,9 @@ jobs:
     - run: yarn
     - run: ghpages=1 yarn build
     - run: |
+        git config --global user.email "lif3ng@icloud.com"
+        git config --global user.name "lif3ng"
+    - run: |
         cd docs/.vuepress/dist
         git init
         git add -A
