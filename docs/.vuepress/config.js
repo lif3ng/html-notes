@@ -1,8 +1,7 @@
 const unescapeAll = require("markdown-it/lib/common/utils").unescapeAll;
-
 module.exports = {
   title: "HTML 笔记",
-  base: "/",
+  base: process.env.ghpages ? "/html-notes/" : "/",
   head: [
     ["script", { src: "/vue.min.js" }],
     ["script", { src: "/html.min.js" }],
