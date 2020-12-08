@@ -16,7 +16,7 @@
     "postinstall": "node scripts/postinstall.js"
   },
   "dependencies": {
-    "page-playground": "^0.1.7"
+    "page-playground": "^0.1.8"
   },
   "husky": {
     "hooks": {
