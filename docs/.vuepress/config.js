@@ -7,7 +7,7 @@ module.exports = {
     ["script", { src: "/html.min.js" }],
   ],
   themeConfig: {
-    sidebar: ["", "kinds", "meta", "text"],
+    sidebar: ["", "kinds", "meta", "text", "form"],
   },
   markdown: {
     plugins: [
