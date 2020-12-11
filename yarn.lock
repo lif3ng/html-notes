@@ -5797,10 +5797,10 @@ package-json@^6.3.0:
     registry-url "^5.0.0"
     semver "^6.2.0"
 
-page-playground@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.npm.taobao.org/page-playground/download/page-playground-0.1.8.tgz#de78e54ea8d63944aa336c1258eebd0d6a5ab82f"
-  integrity sha1-3njlTqjWOUSqM2wSWO69DWpauC8=
+page-playground@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.npm.taobao.org/page-playground/download/page-playground-0.1.9.tgz#c9426cfadff57470c7063220a9bdc72bd63a5186"
+  integrity sha1-yUJs+t/1dHDHBjIgqb3HK9Y6UYY=
   dependencies:
     "@codemirror/next" "^0.14.0"
     autoprefixer "^9"

@@ -20,7 +20,7 @@ module.exports = {
             info = token.info ? unescapeAll(token.info).trim() : "";
           if (info === "html") {
             // return `<div class="code-block inside-gutter"><div>${token.content}</div></div>`;
-            return `<html-playground areas="html" control-btns="format">${token.content}</html-playground>`;
+            return `<html-playground areas="html" control-btns="format,fullscreen">${token.content}</html-playground>`;
           }
           return defaultFenceRule(tokens, idx, options, env, slf);
         };

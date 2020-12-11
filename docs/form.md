@@ -14,18 +14,25 @@ GET 请求用于安全交互，POST 请求用于非安全交互
 
 - `application/x-www-form-urlencoded` 默认值。不能上传文件
 - `multipart/form-data` 能上传文件
-- `text/plain` 各浏览器实现有差异，应避免使用
+- `text/plain` 用回车分隔各个字段
 
 ```html
-<base href="https://untitled-su9syzlte725.runkit.sh/" />
-<form method="post" action="/" enctype="multipart/form-data" target="result">
+<form
+  method="post"
+  action="https://http-raw-body.lif3ng.repl.co"
+  target="result"
+>
   <p>
     <input name="field1" value="value1" />
   </p>
   <p><input name="field2" value="value2" /></p>
-  <button>submit</button>
+  <button>application/x-www-form-urlencoded (defalut)</button>
+  <br />
+  <button formenctype="multipart/form-data">multipart/form-data</button>
+  <br />
+  <button formenctype="text/plain">text/plain</button>
 </form>
-<object type="text/html" name="result" width="300" height="100"></object>
+<object type="text/html" name="result"></object>
 ```
 
 ## autocomplete 自动补全
