@@ -4,13 +4,14 @@ module.exports = {
   base: process.env.ghpages ? "/html-notes/" : "/",
   head: [
     ["script", { src: "/vue.min.js" }],
-    ["script", { src: "/html.min.js" }],
+    ["script", { src: "/html.min.js", async: true }],
   ],
   themeConfig: {
     sidebar: [
       "",
       "kinds",
       "meta",
+      "heading",
       "text",
       { title: "表单", children: ["form", "input", "validate"] },
     ],
