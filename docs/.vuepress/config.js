@@ -10,9 +10,11 @@ module.exports = {
     sidebar: [
       "",
       "kinds",
+      "global-attr",
       "meta",
       "heading",
       "text",
+      "iframe",
       { title: "表单", children: ["form", "input", "validate"] },
     ],
     sidebarDepth: 2,
