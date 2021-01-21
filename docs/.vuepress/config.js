@@ -15,6 +15,7 @@ module.exports = {
       "heading",
       "text",
       "iframe",
+      "details",
       { title: "表单", children: ["form", "input", "validate"] },
     ],
     sidebarDepth: 2,
@@ -29,8 +30,13 @@ module.exports = {
           const token = tokens[idx],
             info = token.info ? unescapeAll(token.info).trim() : "";
           if (info === "html") {
+            console.log(token.content);
             // return `<div class="code-block inside-gutter"><div>${token.content}</div></div>`;
-            return `<html-playground areas="html" control-btns="format,fullscreen">${token.content}</html-playground>`;
+            // return `<html-playground areas="html" control-btns="format,fullscreen">${token.content}</html-playground>`;
+            return `<html-playground areas="html" control-btns="format,fullscreen" html="${token.content.replace(
+              /"/g,
+              "&quot;"
+            )}" />`;
           }
           return defaultFenceRule(tokens, idx, options, env, slf);
         };
