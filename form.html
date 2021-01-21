@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>form 表单 | HTML 笔记</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <script src="/html-notes/vue.min.js"></script>
+    <script src="/html-notes/html.min.js" async="true"></script>
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/html-notes/assets/css/0.styles.38e8c011.css" as="style"><link rel="preload" href="/html-notes/assets/js/app.268119aa.js" as="script"><link rel="preload" href="/html-notes/assets/js/2.db5ed5f2.js" as="script"><link rel="preload" href="/html-notes/assets/js/9.8a4be0b7.js" as="script"><link rel="prefetch" href="/html-notes/assets/js/10.0cf3b64e.js"><link rel="prefetch" href="/html-notes/assets/js/11.76d6545c.js"><link rel="prefetch" href="/html-notes/assets/js/12.4a9cf1ff.js"><link rel="prefetch" href="/html-notes/assets/js/13.c4af7b5e.js"><link rel="prefetch" href="/html-notes/assets/js/14.08d22f8c.js"><link rel="prefetch" href="/html-notes/assets/js/15.cff82eb8.js"><link rel="prefetch" href="/html-notes/assets/js/16.afc60a20.js"><link rel="prefetch" href="/html-notes/assets/js/17.910bd1ba.js"><link rel="prefetch" href="/html-notes/assets/js/3.dd383bec.js"><link rel="prefetch" href="/html-notes/assets/js/4.3f555fb4.js"><link rel="prefetch" href="/html-notes/assets/js/5.b380f8ae.js"><link rel="prefetch" href="/html-notes/assets/js/6.d513a16e.js"><link rel="prefetch" href="/html-notes/assets/js/7.7c3db7ba.js"><link rel="prefetch" href="/html-notes/assets/js/8.00a42876.js">
+    <link rel="stylesheet" href="/html-notes/assets/css/0.styles.38e8c011.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/html-notes/" class="home-link router-link-active"><!----> <span class="site-name">HTML 笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/html-notes/" aria-current="page" class="sidebar-link">html-notes</a></li><li><a href="/html-notes/kinds.html" class="sidebar-link">元素归类和索引</a></li><li><a href="/html-notes/global-attr.html" class="sidebar-link">全局属性</a></li><li><a href="/html-notes/meta.html" class="sidebar-link">元数据</a></li><li><a href="/html-notes/heading.html" class="sidebar-link">标题内容</a></li><li><a href="/html-notes/text.html" class="sidebar-link">文本元素</a></li><li><a href="/html-notes/iframe.html" class="sidebar-link">iframe</a></li><li><a href="/html-notes/details.html" class="sidebar-link">details 详情</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>表单</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/html-notes/form.html" aria-current="page" class="active sidebar-link">form 表单</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html-notes/form.html#action-表单提交路径" class="sidebar-link">action 表单提交路径</a></li><li class="sidebar-sub-header"><a href="/html-notes/form.html#method-表单提交方法" class="sidebar-link">method 表单提交方法</a></li><li class="sidebar-sub-header"><a href="/html-notes/form.html#enctype-指定数据编码" class="sidebar-link">enctype 指定数据编码</a></li><li class="sidebar-sub-header"><a href="/html-notes/form.html#autocomplete-自动补全" class="sidebar-link">autocomplete 自动补全</a></li><li class="sidebar-sub-header"><a href="/html-notes/form.html#target-提交后目标显示位置" class="sidebar-link">target 提交后目标显示位置</a></li><li class="sidebar-sub-header"><a href="/html-notes/form.html#name-设置表单名称" class="sidebar-link">name 设置表单名称</a></li></ul></li><li><a href="/html-notes/input.html" class="sidebar-link">input 输入（框）</a></li><li><a href="/html-notes/validate.html" class="sidebar-link">表单校验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="form-表单"><a href="#form-表单" class="header-anchor">#</a> form 表单</h1> <p>form 元素属性</p> <h2 id="action-表单提交路径"><a href="#action-表单提交路径" class="header-anchor">#</a> action 表单提交路径</h2> <p>指向提交地址，支持绝对路径和相对路径。可通过 base 元素修改相对路径。</p> <h2 id="method-表单提交方法"><a href="#method-表单提交方法" class="header-anchor">#</a> method 表单提交方法</h2> <p>GET 请求用于安全交互，POST 请求用于非安全交互</p> <h2 id="enctype-指定数据编码"><a href="#enctype-指定数据编码" class="header-anchor">#</a> enctype 指定数据编码</h2> <ul><li><code>application/x-www-form-urlencoded</code> 默认值。不能上传文件</li> <li><code>multipart/form-data</code> 能上传文件</li> <li><code>text/plain</code> 用回车分隔各个字段</li></ul> <html-playground areas="html" control-btns="format,fullscreen" html="&lt;form
+  method=&quot;post&quot;
+  action=&quot;https://http-raw-body.lif3ng.repl.co&quot;
+  target=&quot;result&quot;
+&gt;
+  &lt;p&gt;
+    &lt;input name=&quot;field1&quot; value=&quot;value1&quot; /&gt;
+  &lt;/p&gt;
+  &lt;p&gt;&lt;input name=&quot;field2&quot; value=&quot;value2&quot; /&gt;&lt;/p&gt;
+  &lt;button&gt;application/x-www-form-urlencoded (defalut)&lt;/button&gt;
+  &lt;br /&gt;
+  &lt;button formenctype=&quot;multipart/form-data&quot;&gt;multipart/form-data&lt;/button&gt;
+  &lt;br /&gt;
+  &lt;button formenctype=&quot;text/plain&quot;&gt;text/plain&lt;/button&gt;
+&lt;/form&gt;
+&lt;object type=&quot;text/html&quot; name=&quot;result&quot;&gt;&lt;/object&gt;
+"></html-playground><h2 id="autocomplete-自动补全"><a href="#autocomplete-自动补全" class="header-anchor">#</a> autocomplete 自动补全</h2> <p>取值为 <code>on</code>, <code>off</code>. 默认值为 <code>on</code>.设置后内部 input 上的<code>autocomplete</code>属性可以覆盖这个行为。</p> <h2 id="target-提交后目标显示位置"><a href="#target-提交后目标显示位置" class="header-anchor">#</a> target 提交后目标显示位置</h2> <p>与 a 元素<code>target</code> 属性一样</p> <ul><li><code>_self</code> 默认值。当前窗口</li> <li><code>_blank</code> 新窗口</li> <li><code>_parent</code> 父窗窗框(窗口或 frame)</li> <li><code>_top</code> 顶层窗口</li> <li><code>&lt;frame&gt;</code> 指定窗框</li></ul> <h2 id="name-设置表单名称"><a href="#name-设置表单名称" class="header-anchor">#</a> name 设置表单名称</h2> <p>用于在使用 DOM 时区分各个表单</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/html-notes/details.html" class="prev">
+        details 详情
+      </a></span> <span class="next"><a href="/html-notes/input.html">
+        input 输入（框）
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/html-notes/assets/js/app.268119aa.js" defer></script><script src="/html-notes/assets/js/2.db5ed5f2.js" defer></script><script src="/html-notes/assets/js/9.8a4be0b7.js" defer></script>
+  </body>
+</html>

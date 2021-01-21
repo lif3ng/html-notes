@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>input 输入（框） | HTML 笔记</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <script src="/html-notes/vue.min.js"></script>
+    <script src="/html-notes/html.min.js" async="true"></script>
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/html-notes/assets/css/0.styles.38e8c011.css" as="style"><link rel="preload" href="/html-notes/assets/js/app.268119aa.js" as="script"><link rel="preload" href="/html-notes/assets/js/2.db5ed5f2.js" as="script"><link rel="preload" href="/html-notes/assets/js/13.c4af7b5e.js" as="script"><link rel="prefetch" href="/html-notes/assets/js/10.0cf3b64e.js"><link rel="prefetch" href="/html-notes/assets/js/11.76d6545c.js"><link rel="prefetch" href="/html-notes/assets/js/12.4a9cf1ff.js"><link rel="prefetch" href="/html-notes/assets/js/14.08d22f8c.js"><link rel="prefetch" href="/html-notes/assets/js/15.cff82eb8.js"><link rel="prefetch" href="/html-notes/assets/js/16.afc60a20.js"><link rel="prefetch" href="/html-notes/assets/js/17.910bd1ba.js"><link rel="prefetch" href="/html-notes/assets/js/3.dd383bec.js"><link rel="prefetch" href="/html-notes/assets/js/4.3f555fb4.js"><link rel="prefetch" href="/html-notes/assets/js/5.b380f8ae.js"><link rel="prefetch" href="/html-notes/assets/js/6.d513a16e.js"><link rel="prefetch" href="/html-notes/assets/js/7.7c3db7ba.js"><link rel="prefetch" href="/html-notes/assets/js/8.00a42876.js"><link rel="prefetch" href="/html-notes/assets/js/9.8a4be0b7.js">
+    <link rel="stylesheet" href="/html-notes/assets/css/0.styles.38e8c011.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/html-notes/" class="home-link router-link-active"><!----> <span class="site-name">HTML 笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/html-notes/" aria-current="page" class="sidebar-link">html-notes</a></li><li><a href="/html-notes/kinds.html" class="sidebar-link">元素归类和索引</a></li><li><a href="/html-notes/global-attr.html" class="sidebar-link">全局属性</a></li><li><a href="/html-notes/meta.html" class="sidebar-link">元数据</a></li><li><a href="/html-notes/heading.html" class="sidebar-link">标题内容</a></li><li><a href="/html-notes/text.html" class="sidebar-link">文本元素</a></li><li><a href="/html-notes/iframe.html" class="sidebar-link">iframe</a></li><li><a href="/html-notes/details.html" class="sidebar-link">details 详情</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>表单</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/html-notes/form.html" class="sidebar-link">form 表单</a></li><li><a href="/html-notes/input.html" aria-current="page" class="active sidebar-link">input 输入（框）</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html-notes/input.html#type-text-文字" class="sidebar-link">type=&quot;text&quot; 文字</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html-notes/input.html#dirname" class="sidebar-link">dirname</a></li><li class="sidebar-sub-header"><a href="/html-notes/input.html#list" class="sidebar-link">list</a></li><li class="sidebar-sub-header"><a href="/html-notes/input.html#maxlength" class="sidebar-link">maxlength</a></li><li class="sidebar-sub-header"><a href="/html-notes/input.html#size" class="sidebar-link">size</a></li><li class="sidebar-sub-header"><a href="/html-notes/input.html#placeholder" class="sidebar-link">placeholder</a></li><li class="sidebar-sub-header"><a href="/html-notes/input.html#value" class="sidebar-link">value</a></li></ul></li></ul></li><li><a href="/html-notes/validate.html" class="sidebar-link">表单校验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="input-输入-框"><a href="#input-输入-框" class="header-anchor">#</a> input 输入（框）</h1> <p>input 元素用于表单项的输入</p> <h2 id="type-text-文字"><a href="#type-text-文字" class="header-anchor">#</a> type=&quot;text&quot; 文字</h2> <p>默认值</p> <h3 id="dirname"><a href="#dirname" class="header-anchor">#</a> dirname</h3> <p>输入文字的方向数据发送给服务器</p> <html-playground areas="html" control-btns="format,fullscreen" html="&lt;form
+  method=&quot;post&quot;
+  action=&quot;https://http-raw-body.lif3ng.repl.co&quot;
+  enctype=&quot;text/plain&quot;
+  target=&quot;result&quot;
+&gt;
+  &lt;p&gt;
+    &lt;input name=&quot;a&quot; dirname=&quot;adir&quot; /&gt;
+  &lt;/p&gt;
+  &lt;p&gt;&lt;input name=&quot;b&quot; dirname=&quot;bdir&quot; dir=&quot;rtl&quot; /&gt;&lt;/p&gt;
+  &lt;button&gt;submit&lt;/button&gt;
+&lt;/form&gt;
+&lt;object type=&quot;text/html&quot; name=&quot;result&quot;&gt;&lt;/object&gt;
+"></html-playground><h3 id="list"><a href="#list" class="header-anchor">#</a> list</h3> <p>指定提供建议值的 datalist 元素,可以使用 HTML 原生下拉项检索能力。</p> <p>option 同时包含 value 和 label 时，各个浏览器显示有差异。</p> <html-playground areas="html" control-btns="format,fullscreen" html="&lt;input list=&quot;list&quot; /&gt;
+&lt;datalist id=&quot;list&quot;&gt;
+  &lt;option&gt;v1&lt;/option&gt;
+  &lt;option value=&quot;v2&quot;&gt;show2&lt;/option&gt;
+  &lt;option value=&quot;v3&quot; label=&quot;show3&quot;&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+"></html-playground><h3 id="maxlength"><a href="#maxlength" class="header-anchor">#</a> maxlength</h3> <p>可输入字符最大数目</p> <h3 id="size"><a href="#size" class="header-anchor">#</a> size</h3> <p><strong>可见</strong>字符数目（宽度），默认值为 20。实际测试结果偏宽。</p> <html-playground areas="html" control-btns="format,fullscreen" html="&lt;p&gt;&lt;input maxlength=&quot;5&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input size=&quot;1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input size=&quot;2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input size=&quot;3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input size=&quot;4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input size=&quot;5&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input maxlength=&quot;5&quot; size=&quot;5&quot; /&gt;&lt;/p&gt;
+"></html-playground><h3 id="placeholder"><a href="#placeholder" class="header-anchor">#</a> placeholder</h3> <p>值为空时占位内容</p> <h3 id="value"><a href="#value" class="header-anchor">#</a> value</h3> <p>初始值。表单 reset 时，表单项会重置为初始值。</p> <html-playground areas="html" control-btns="format,fullscreen" html="&lt;form&gt;
+  &lt;p&gt;&lt;input value=&quot;1&quot; /&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;input placeholder=&quot;placeholder text&quot; /&gt;&lt;/p&gt;
+  &lt;button type=&quot;reset&quot;&gt;reset&lt;/button&gt;
+&lt;/form&gt;
+"></html-playground></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/html-notes/form.html" class="prev">
+        form 表单
+      </a></span> <span class="next"><a href="/html-notes/validate.html">
+        表单校验
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/html-notes/assets/js/app.268119aa.js" defer></script><script src="/html-notes/assets/js/2.db5ed5f2.js" defer></script><script src="/html-notes/assets/js/13.c4af7b5e.js" defer></script>
+  </body>
+</html>
